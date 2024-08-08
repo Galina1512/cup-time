@@ -3,14 +3,12 @@ import { createContext, useContext, useState } from 'react';
 const OrderContext = createContext();
 
 export const OrderProvider = ({children}) => {
-    const [orderDelails, setOrderDetails] = useState({
+    const [orderDetails, setOrderDetails] = useState({
         name: "",
         phone: "",
         address: "",
         payment: "cash",
     });
-
-    console.log(orderDelails);
 
     const updateOrderDetails = (field, value) => {
         setOrderDetails((prevDetails) => ({
@@ -30,7 +28,7 @@ export const OrderProvider = ({children}) => {
 
     return (
     <OrderContext.Provider 
-        value={{orderDelails, updateOrderDetails, clearOrderDetails}}>
+        value={{orderDetails, updateOrderDetails, clearOrderDetails}}>
         {children}
     </OrderContext.Provider>)
 }

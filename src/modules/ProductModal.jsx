@@ -61,9 +61,9 @@ export const ProductModal = ({ isOpen, onRequestClose, data }) => {
                 <button onClick={handleIncrease} className='cart-item__quantity-button cart-item__quantity-button_plas'> + </button>
             </div>
             
-            <button onClick={handleAddToCart}>Добавить в корзину</button>
+            <button onClick={handleAddToCart} className='modal__button-add'>Добавить в корзину</button>
 
-            <button onClick={onRequestClose}>Закрыть</button>
+            <button onClick={onRequestClose} className='modal__button-close'>Закрыть</button>
         </Modal>
     );
 };

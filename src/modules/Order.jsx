@@ -2,6 +2,7 @@ import { useOrder } from '../contex/OrderContext';
 
 export const Order = () => {
     const {orderDetails, updateOrderDetails} = useOrder();
+    console.log(orderDetails);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

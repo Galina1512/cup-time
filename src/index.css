@@ -437,6 +437,43 @@ margin-bottom: 3px;
   height: 600px;
   background-color: #e3f7f3;
 }
+.modal__button-add {
+margin-top: 10px;
+margin-right: 10px;
+padding: 5px 10px;
+}
+.modal__button-close {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.modal-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.modal-cart__overlay {
+ background-color: rgb(84, 76, 84, .5);
+ position: fixed;
+ inset: 0;
+}
+.modal-cart__title {
+  font-size: 36px;
+}
+.modal-cart__button {
+  background-color: #64099b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
 
 @media (max-width: 1240px) {
   .container {
